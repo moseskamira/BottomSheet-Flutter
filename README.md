@@ -1,6 +1,6 @@
-# bottom_sheet
+# Flutter Bottom Sheet
 
-A new Flutter project.
+This project is intended to Demo the implementation of Bottom Sheet in Flutter with Dart..
 
 ## Getting Started
 
