@@ -13,7 +13,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Bottom Sheet Demo'),
+        backgroundColor: Colors.blue,
+        title: const Text(
+          'Flutter Bottom Sheet Demo',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18,
+          ),
+        ),
         centerTitle: true,
       ),
       body: Center(
@@ -41,7 +48,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     });
               },
-              child: const Text('TAP HERE TO SHOW'),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                padding: const EdgeInsets.all(10),
+                child: const Text(
+                  'TAP HERE TO SHOW',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

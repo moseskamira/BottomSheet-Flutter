@@ -66,7 +66,7 @@ class BottomSheetItemCard extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 10),
                             child: Text(
-                              'Bottom Sheet $index',
+                              'Bottom Sheet Item $index',
                               textAlign: TextAlign.left,
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
