@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/bottom_sheet_item_card.dart';
+import '../widgets/bottom_sheet_list_view.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -28,26 +28,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     builder: (BuildContext context) {
                       return StatefulBuilder(
                           builder: (BuildContext ctx, StateSetter myState) {
-                        return RawScrollbar(
+                        return const RawScrollbar(
                           thumbVisibility: true,
                           thumbColor: Colors.blue,
-                          radius: const Radius.circular(24),
+                          radius: Radius.circular(24),
                           thickness: 5,
                           trackVisibility: true,
                           child: SingleChildScrollView(
-                            child: ListView.builder(
-                                itemCount: 4,
-                                shrinkWrap: true,
-                                physics: const NeverScrollableScrollPhysics(),
-                                scrollDirection: Axis.vertical,
-                                itemBuilder: (BuildContext context, int index) {
-                                  return GestureDetector(
-                                    onTap: () {
-                                      setState(() {});
-                                    },
-                                    child: BottomSheetItemCard(index: index),
-                                  );
-                                }),
+                            child: BottomSheetListView(),
                           ),
                         );
                       });
